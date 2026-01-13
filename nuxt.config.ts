@@ -6,7 +6,7 @@ import { resolve } from 'path'
  * 根据运行环境决定是否使用 SSL
  * 在 Cloudflare 环境中，不需要本地 SSL 证书
  */
-const RUNTIME_ENV = process.env.RUNTIME_ENV || 'nodejs'
+const RUNTIME_ENV = 'cloudflare'
 
 /**
  * 仅允许用于开发调试的域名
